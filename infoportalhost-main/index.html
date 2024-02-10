@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      margin: 5px;
+      padding: 35px;
+      font-size: 16px;
+      /* Adjust base font size here */
+    }
+
+    .dashboard {
+      display: flex;
+      justify-content: space-around;
+      background-color: #e9fccb;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+      padding: 25px;
+      width: 20%;
+      /* Adjust the sidebar width */
+      border-right: 1px solid #ccc;
+    }
+
+    .main-content {
+      padding: 40px;
+      width: 75%;
+      /* Adjust the main content width */
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      text-decoration: underline;
+    }
+
+    .user-details table,
+    .orders table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #fff;
+      color: black;
+    }
+
+    td {
+      background-color: #f9f9f9;
+    }
+
+    /* Responsive design */
+    @media (min-width: 992px) {
+      body {
+        font-size: 25px;
+        /* Larger font size for desktop */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <title>Profile Picture</title>
+      <style>
+        .profile-avatar {
+          width: 100px;
+          /* Adjust width as needed */
+          height: 100px;
+          /* Adjust height as needed */
+          padding: 1rem;
+          /* Adjust padding as needed */
+          border-radius: 9999px;
+          /* Rounded border */
+          outline: 2px solid #d1d5db;
+          /* Ring effect */
+          background-color: white;
+          /* Assuming a white background */
+        }
+
+        /* If you're using dark mode */
+        .dark .profile-avatar {
+          outline-color: #374151;
+          /* Ring color for dark mode */
+        }
+      </style>
+      </head>
+
+      <body>
+        <img class="profile-avatar" src="old.jpg" alt="Bordered avatar">
+      </body>
+
+      <p>User: Ramesh Kamlesh Kumar</p>
+      <ul>
+        <li>Home Page </li>
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Setting</li>
+        <li>Log 0ut</li>
+      </ul>
+
+
+
+    </div>
+
+    <div class="main-content">
+      <title>Logo Picture</title>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          /* Other styles */
+        }
+
+        .dashboard {
+          /* Your dashboard styles */
+        }
+
+        .logo-avatar {
+          height: 70px;
+          padding: 1rem;
+          border-radius: 9999px;
+          outline: 2px solid #d1d5db;
+          background-color: white;
+          position: absolute;
+          /* Use absolute positioning */
+          top: 0;
+          /* Align to the top of the nearest positioned ancestor */
+          right: 0;
+          /* Align to the right of the nearest positioned ancestor */
+          margin-right: 1rem;
+          /* Add some margin to the right */
+          margin-top: 1rem;
+          /* Add some margin to the top */
+        }
+
+        /* If you're using dark mode */
+        .dark .logo-avatar {
+          outline-color: #374151;
+        }
+      </style>
+      </head>
+
+      <body class="dark"> <!-- Added 'dark' class for demonstration -->
+        <div class="dashboard">
+          <!-- Dashboard content here -->
+        </div>
+        <img class="logo-avatar" src="pds.png" alt="Bordered avatar">
+      </body>
+
+</html>
+<div class="user-details">
+  <h2>Ramesh Kamlesh Kumar</h2>
+  <table>
+    <tbody>
+      <tr>
+        <th>Phone Number:</th>
+        <td>9745 000 000</td>
+      </tr>
+      <tr>
+        <th>Ration Number:</th>
+        <td>123456789</td>
+      </tr>
+      <tr>
+        <th>Inventory:</th>
+        <td>500</td>
+      </tr>
+      <tr>
+        <th>Marital Status:</th>
+        <td>Married</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="orders">
+  <h2>Nominee Information</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Relation</th>
+        <th>Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ramesh Kamlesh Kumar</td>
+        <td>Self</td>
+        <td>9745 000 000</td>
+      </tr>
+      <tr>
+        <td>Sheetal Ramesh Kumar</td>
+        <td>Wife</td>
+        <td>9745 111 111</td>
+      </tr>
+      <!-- Repeat for each person -->
+      <tr>
+        <td>Kamla Ramesh Kumar</td>
+        <td>Daughter</td>
+        <td>9978 005 500 </td>
+      <tr>
+        <td>Suresh Ramesh Kumar</td>
+        <td>Son</td>
+        <td>-</td>
+      </tr>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h2>Transaction History</h2>
+<table>
+  <thead>
+
+    <style>
+      th,
+      td {
+        padding: 8px;
+      }
+    </style>
+    <tr>
+      <th>Date</th>
+      <th>Transaction Type</th>
+      <th>Product Name</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-02-10</td>
+      <td>Purchase</td>
+      <td>Product Name</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>2024-01-10</td>
+      <td>Purchase</td>
+      <td>Product Name</td>
+      <td>100</td>
+    </tr>
+    <!-- Repeat for each person -->
+    <tr>
+      <td>2023-12-10</td>
+      <td>Purchase</td>
+      <td>Product Name</td>
+      <td>100</td>
+    <tr>
+
+  </tbody>
+</table>
+</div>
+</div </body>
+<title>Verify Button</title>
+<style>
+  body,
+  html {
+    height: 200%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .verify-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .verify-button {
+    padding: 30px 60px;
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    /* Larger font size */
+  }
+
+  .verify-button:hover {
+    background-color: #45a049;
+    /* Darker shade for hover state */
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Button in the bottom-right corner of the page -->
+  <div class="verify-button-container">
+    <a href="https://file1-production.up.railway.app/">
+      <button class="verify-button">
+        Verify
+      </button>
+    </a>
+  </div>
+
+</body>
+
+</html>
